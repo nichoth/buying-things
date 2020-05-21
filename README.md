@@ -40,8 +40,37 @@ Open netlify dashboard: `ntl open`
 Open the site: `ntl open:site`
 
 ## env variables
-third-party API tokens and secret things
+**third-party API tokens and secret things**
 
 the publishable key and the secret key for our Stripe account
+
+Add the keys as env variable through the netlify web UI. Then run `npx ntl dev` again and they env variables will be there.
+
+------------------------------------------
+
+Add stripe.js from the stripe CDN. We’re using the CDN version because our public site doesn’t have a build step. There is also an npm-installable package available.
+
+## Send form purchases to a serverless function
+Our client-side JavaScript needs to capture form submissions, then we send the form data to stripe.
+
+Create a new file called `public/js/stripe-purchase.js` 
+
+Our form handler sends data to a serverless function `create-checkout`.
+
+Since our function will use the stripe npm package, we need to create `functions/package.json` and install stripe.
+
+We need to make sure that Netlify will install our function dependencies, so let’s update netlify.toml with the line
+
+```
+command = "cd functions && npm i && cd .."
+```
+
+## create the serverless fn and a success page
+Success page : `${process.env.URL}/success.html`
+function: `functions/create-checkout.js`
+
+You can test things now.
+Use `4242 4242 4242 4242` as a test credit card.
+
 
 
