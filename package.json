@@ -1,0 +1,25 @@
+{
+  "name": "buying-things",
+  "description": "You can sell products on Jamstack sites using Stripe Checkout to process payments and Netlify Functions to securely create Checkout sessions.",
+  "version": "0.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "netlify-cli": "^2.51.0"
+  },
+  "dependencies": {},
+  "scripts": {
+    "start": "ntl dev",
+    "build": "echo \"ok\" && exit 0",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nichoth/buying-things.git"
+  },
+  "author": "Nick Thomas <nichoth@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nichoth/buying-things/issues"
+  },
+  "homepage": "https://github.com/nichoth/buying-things#readme"
+}
