@@ -72,5 +72,9 @@ function: `functions/create-checkout.js`
 You can test things now.
 Use `4242 4242 4242 4242` as a test credit card.
 
+---------------------------
+
+After changing out the Stripe keys for live credentials, this site is completely ready to process real transactions.
+
 
 
