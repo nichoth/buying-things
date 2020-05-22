@@ -10,9 +10,11 @@ https://www.netlify.com/blog/2020/04/13/learn-how-to-accept-money-on-jamstack-si
 
 You can sell products on Jamstack sites using Stripe Checkout to process payments and Netlify Functions to securely create Checkout sessions.
 
-This example uses no statix site generator like 11ty.
+This example does not use a static site generator like 11ty.
+
 
 -------------------
+
 
 Use the netlify cli. It allows us to run Netlify Functions locally.
 `npm i -D netlify-cli`. This exposes the `ntl` command: `npx ntl dev`. The file `netlify.toml` tells the CLI where the files are. 
