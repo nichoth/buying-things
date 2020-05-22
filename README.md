@@ -27,13 +27,15 @@ Use the netlify cli. It allows us to run Netlify Functions locally.
 
 > Now that we have data available, let’s create `functions/get-products.js` to load the data and return it for use in our frontend.
 
+**Product data should come from a combination CMS & inventory db.**
+
 For Netlify to deploy our serverless functions, we need to tell it where they’re located. To do this, we need to modify netlify.toml with a functions setting and add our functions directory as the value.
 
 Run `npx ntl dev` then visit `http://localhost:8888/.netlify/functions/get-products` to run the function.
 
 To load the product data into the frontend of our site, we need to add some client-side JavaScript. See `/public/js/load-products.js`
 
-This function uses the built-in Fetch API to load the response from our serveless function
+This function uses the built-in Fetch API to load the response from our serverless function
 
 ------------------------------
 
