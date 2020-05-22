@@ -1,3 +1,11 @@
+## payments and stuff
+* square -- 2.9% + $.30. Also has an API for inventory
+* stripe -- 2.9% + $.30.
+* bigcommerce -- $29.99/mo
+* weebly -- $6/mo
+* snipcart -- 2% of transaction with $10/month minimum. Provides inventory API
+    - Use CMS to add product images and stuff, use snipcart to track inventory
+
 https://www.netlify.com/blog/2020/04/13/learn-how-to-accept-money-on-jamstack-sites-in-38-minutes/?utm_source=blog&utm_medium=stripe-jl&utm_campaign=devex
 
 You can sell products on Jamstack sites using Stripe Checkout to process payments and Netlify Functions to securely create Checkout sessions.
